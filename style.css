@@ -1,0 +1,40 @@
+:root,
+body.light {--primary:#0061a4;
+--on-primary:#ffffff;
+--primary-container:#d1e4ff;
+--on-primary-container:#001d36;
+--secondary:#535f70;
+--on-secondary:#ffffff;
+--secondary-container:#d7e3f7;
+--on-secondary-container:#101c2b;
+--tertiary:#6b5778;
+--on-tertiary:#ffffff;
+--tertiary-container:#f2daff;
+--on-tertiary-container:#251431;
+--error:#ba1a1a;
+--on-error:#ffffff;
+--error-container:#ffdad6;
+--on-error-container:#410002;
+--background:#fdfcff;
+--on-background:#1a1c1e;
+--surface:#faf9fc;
+--on-surface:#1a1c1e;
+--surface-variant:#dfe2eb;
+--on-surface-variant:#43474e;
+--outline:#73777f;
+--outline-variant:#c3c7cf;
+--shadow:#000000;
+--scrim:#000000;
+--inverse-surface:#2f3033;
+--inverse-on-surface:#f1f0f4;
+--inverse-primary:#9ecaff;
+--surface-dim:#dadadd;
+--surface-bright:#faf9fc;
+--surface-container-lowest:#ffffff;
+--surface-container-low:#f4f3f7;
+--surface-container:#eeedf1;
+--surface-container-high:#e8e8eb;
+--surface-container-highest:#e2e2e6;
+
+font-weight: 400;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
