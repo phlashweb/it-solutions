@@ -1623,7 +1623,6 @@ textarea {
 .banner_title {
     padding: 80px 0;
     padding-top: 150px;
-    background: url(https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/img/geometric.jpg) no-repeat;
     background-size: cover;
     position: relative;
     box-sizing: border-box;
@@ -3108,36 +3107,24 @@ html {
 }
 
 .vc_custom_1542883405716 {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
     background-color: #f0f0f0 !important
 }
 
-.vc_custom_1542882530605 {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important
-}
+
 
 .vc_custom_1542882553415 {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
     background-color: #f0f0f0 !important
 }
 
-.vc_custom_1542882547199 {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important
-}
+
 
 .vc_custom_1544685411898 {
-    padding-top: 70px !important;
-    padding-bottom: 80px !important;
+
     background-color: #f0f0f0 !important
 }
 
 .vc_custom_1542882572398 {
-    padding-top: 30px !important;
-    padding-bottom: 80px !important;
+
     background-color: #0000fe !important
 }
 
@@ -3244,24 +3231,6 @@ html {
 
 .fa-twitter:before {
     content: "\f099"
-}
-
-@font-face {
-    font-family: 'Font Awesome 5 Brands';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.eot);
-    src: url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.woff2) format("woff2"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.woff) format("woff"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.ttf) format("truetype"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-brands-400.svg#fontawesome) format("svg")
-}
-
-@font-face {
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.eot);
-    src: url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.woff2) format("woff2"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.woff) format("woff"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.ttf) format("truetype"), url(https://phlashweb.co.uk/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/webfonts/fa-solid-900.svg#fontawesome) format("svg")
 }
 
 .fa {

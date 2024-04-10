@@ -10,7 +10,6 @@
 }
 
 #close_button {
-    background: url(https://phlashweb.co.uk/wp-content/plugins/cm-pop-up-banners/shared/assets/images/close_modal.png) no-repeat;
     width: 30px !important;
     height: 30px !important;
     display: block;
@@ -529,7 +528,8 @@ html {
         line-height: 45px;
         padding: 0 40px !important;
         letter-spacing: 0;
-        border-radius: 25px
+        border-radius: 25px;
+        margin-top: 10px;
     }
 
     .nav-menu .ct_button a:hover {
@@ -1495,7 +1495,6 @@ select {
 
 .banner_title {
     padding: 150px 0 80px;
-    background: url(https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/img/geometric.jpg) center center/cover no-repeat;
     position: relative;
     box-sizing: border-box
 }
@@ -1668,15 +1667,6 @@ select {
 
 #primary[tabindex="-1"]:focus {
     outline: 0
-}
-
-@font-face {
-    font-display: swap;
-    font-family: FontAwesome;
-    src: url('https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/fonts/fontawesome-webfont3e6e.eot?v=4.7.0');
-    src: url('https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/fonts/fontawesome-webfontd41d.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0') format('woff2'), url('https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/fonts/fontawesome-webfont3e6e.woff?v=4.7.0') format('woff'), url('https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/fonts/fontawesome-webfont3e6e.ttf?v=4.7.0') format('truetype'), url('https://phlashweb.co.uk/wp-content/themes/phlashweb_wp/fonts/fontawesome-webfont3e6e.svg?v=4.7.0#fontawesomeregular') format('svg');
-    font-weight: 400;
-    font-style: normal
 }
 
 .fa {
