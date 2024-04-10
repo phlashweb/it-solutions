@@ -10,7 +10,8 @@
       {
         "src": "/images/logo-square.webp",
         "type": "image/png",
-        "sizes": "150x150"
+        "sizes": "150x150",
+        "purpose": "maskable"
       },
       {
         "src": "/images/phlashweb.png",
@@ -31,7 +32,7 @@
         "short_name": "Home",
         "description": "Home",
         "url": "/?source=pwa",
-        "icons": [{ "src": "/images/logo-square.png", "sizes": "150x150" }]
+        "icons": [{ "src": "/images/logo-square.webp", "sizes": "150x150" }]
       }
     ],
     "description": "Phlashweb service information",
@@ -46,6 +47,12 @@
         "src": "/images/screenshots/blog.png",
         "type": "image/png",
         "sizes": "1140x843",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/images/screenshots/screenshot-mobile.png",
+        "type": "image/png",
+        "sizes": "1442x3000",
         "form_factor": "narrow"
       }
     ]

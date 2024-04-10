@@ -2459,6 +2459,11 @@ body .wpb_gallery_slides ul li {
     opacity: 1
 }
 
+.main-navigation .current-menu-item>a,
+.main-navigation .current_page_item>a {
+    color: #09c4d2
+}
+
 [class*=" Defaults-"],
 [class^=Defaults-] {
     font-family: defaults;
