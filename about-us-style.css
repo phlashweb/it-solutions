@@ -173,11 +173,7 @@ html {
 .nav-menu li a {
     color: #fff;
     line-height: 40px;
-    border-bottom: 1px solid #212121;
-    color: #fff;
-    background-color: #212121;
     height: 40px;
-    padding: 0 5%
 }
 
 @media (min-width:1200px) {
