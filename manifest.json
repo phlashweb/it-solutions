@@ -1,0 +1,52 @@
+{
+    "short_name": "Phlashweb",
+    "name": "Phlashweb",
+    "icons": [
+      {
+        "src": "/images/logo.png",
+        "type": "image/png",
+        "sizes": "150x88"
+      },
+      {
+        "src": "/images/logo-square.webp",
+        "type": "image/png",
+        "sizes": "150x150"
+      },
+      {
+        "src": "/images/phlashweb.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "#548cf7",
+    "display_override": ["fullscreen", "minimal-ui"],
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#548cf7",
+    "shortcuts": [
+      {
+        "name": "Home",
+        "short_name": "Home",
+        "description": "Home",
+        "url": "/?source=pwa",
+        "icons": [{ "src": "/images/logo-square.png", "sizes": "150x150" }]
+      }
+    ],
+    "description": "Phlashweb service information",
+    "screenshots": [
+      {
+        "src": "/images/screenshots/screenshot.png",
+        "type": "image/png",
+        "sizes": "1294x750",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/images/screenshots/blog.png",
+        "type": "image/png",
+        "sizes": "1140x843",
+        "form_factor": "narrow"
+      }
+    ]
+  }
