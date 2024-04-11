@@ -428,11 +428,8 @@ html {
 
 .nav-menu li a {
     line-height: 40px;
-    border-bottom: 1px solid #212121;
     color: #fff;
-    background-color: #212121;
     height: 40px;
-    padding: 0 5%
 }
 
 @media(min-width:576px) {

@@ -25,7 +25,7 @@
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#548cf7",
+    "theme_color": "#015dc7",
     "shortcuts": [
       {
         "name": "Home",

@@ -185,11 +185,8 @@ html {
 .nav-menu li a {
     color: #fff;
     line-height: 40px;
-    border-bottom: 1px solid #212121;
     color: #fff;
-    background-color: #212121;
     height: 40px;
-    padding: 0 5%;
 }
 
 @media (min-width: 576px) {
@@ -2895,6 +2892,17 @@ body .wpb_gallery_slides ul li {
 @media (max-width: 767px) {
     .wpcf7-submit {
         margin-bottom: 10px;
+    }
+
+    article {
+        width:90%;
+    }
+}
+
+@media (min-width: 767px) {
+
+    article {
+        width:50%;
     }
 }
 
