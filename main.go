@@ -95,7 +95,7 @@ func main() {
 	})
 
 	// Development
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8000", nil)
 	//Production
 	// http.ListenAndServeTLS(":443", "server.crt", "server.key", nil)
 }
