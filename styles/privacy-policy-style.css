@@ -723,6 +723,7 @@ select {
 [type=reset],
 [type=submit],
 button {
+    appearance: button;
     -webkit-appearance: button
 }
 
@@ -2022,7 +2023,6 @@ body .wpb_gallery_slides ul li {
 
 [class*=" Defaults-"] {
     font-family: Defaults;
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
