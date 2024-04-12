@@ -734,7 +734,7 @@ html {
 }
 
 .base-triangle:before {
-    background-image: url(/images/icons/gear-wheel-with-cogs.png);
+    background-image: url(../images/icons/gear-wheel-with-cogs.png);
     position: absolute;
     width: 350px;
     height: 350px;
@@ -1032,7 +1032,7 @@ html {
 .service-circle .circle div span {
     display: block;
     border-radius: 50%;
-    background: url(/images/icons/loader.gif) 55% center/90px 90px no-repeat !important
+    background: url(../images/icons/loader.gif) 55% center/90px 90px no-repeat !important
 }
 
 .service-circle.red .circle {
@@ -1299,7 +1299,7 @@ html {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(/images/backgrounds/client-slider-bg.png);
+    background-image: url(../images/backgrounds/client-slider-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     opacity: .1
