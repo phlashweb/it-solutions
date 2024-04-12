@@ -65,7 +65,7 @@ func main() {
 		url := ""
 
 		// Create the JSON content
-		contentSend := map[string]string(jsonData)
+		contentSend := map[string]string{"content": string(jsonData)}
 		jsonContent, err := json.Marshal(contentSend)
 		if err != nil {
 			fmt.Println("Error encoding JSON:", err)
