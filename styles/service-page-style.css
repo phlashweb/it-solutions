@@ -270,7 +270,8 @@ html {
         line-height: 45px;
         padding: 0 40px !important;
         letter-spacing: 0;
-        border-radius: 25px
+        border-radius: 25px;
+        margin-top: 10px;
     }
 
     .nav-menu .ct_button a:hover {
