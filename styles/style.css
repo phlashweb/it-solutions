@@ -999,6 +999,7 @@ html {
 .service-circle .circle,
 .service-circle .circle div {
     border-radius: 50%;
+    transition: .3s ease-out;
     -webkit-transition: .3s ease-out
 }
 
@@ -1283,6 +1284,16 @@ html {
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg)
+    }
+}
+
+@keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -1986,6 +1997,7 @@ select {
 [type=reset],
 [type=submit],
 button {
+    appearance: button;
     -webkit-appearance: button
 }
 
@@ -2558,6 +2570,7 @@ select {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    transition-property: -webkit-transform;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
@@ -2565,6 +2578,7 @@ select {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate(0, 0);
@@ -2574,6 +2588,7 @@ select {
 .swiper-slide {
     -webkit-flex-shrink: 0;
     -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     flex-shrink: 0
 }
 
@@ -2607,9 +2622,11 @@ select {
 }
 
 .swiper-pagination {
+    transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
     -o-transition: .3s;
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0)
@@ -3508,7 +3525,6 @@ body .wpb_gallery_slides ul li {
 
 [class*=" Defaults-"] {
     font-family: defaults;
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -3555,6 +3571,7 @@ body .wpb_gallery_slides ul li {
 .aio-icon-img,
 .vc_row .aio-icon {
     display: inline-block;
+    box-sizing: content-box !important;
     -moz-box-sizing: content-box !important;
     -webkit-box-sizing: content-box !important
 }
@@ -3614,6 +3631,7 @@ body .wpb_gallery_slides ul li {
 }
 
 .ult-animation * {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden
 }
 
@@ -3767,7 +3785,8 @@ body .wpb_gallery_slides ul li {
     -webkit-transform-origin: top center;
     -ms-transform-origin: top center;
     transform-origin: top center;
-    -webkit-animation-name: swing
+    -webkit-animation-name: swing;
+    animation-name: swing;
 }
 
 @-webkit-keyframes fadeIn {
@@ -3781,7 +3800,8 @@ body .wpb_gallery_slides ul li {
 }
 
 .fadeIn {
-    -webkit-animation-name: fadeIn
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -3815,6 +3835,7 @@ body .wpb_gallery_slides ul li {
 }
 
 .fadeInLeft {
+    animation-name: fadeInLeft;
     -webkit-animation-name: fadeInLeft
 }
 
@@ -4199,6 +4220,7 @@ button.swiper-pagination-bullet {
     border-radius: 10px;
     position: relative;
     -ms-touch-action: none;
+    touch-action: none;
     background: rgba(0, 0, 0, .1)
 }
 

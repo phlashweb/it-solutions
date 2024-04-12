@@ -1036,6 +1036,7 @@ select {
 [type=reset],
 [type=submit],
 button {
+    appearance: button;
     -webkit-appearance: button
 }
 
@@ -2585,7 +2586,6 @@ body .wpb_gallery_slides ul li {
 
 [class*=" Defaults-"] {
     font-family: defaults;
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -2626,6 +2626,7 @@ body .wpb_gallery_slides ul li {
 .aio-icon-img,
 .vc_row .aio-icon {
     display: inline-block;
+    box-sizing: content-box !important;
     -moz-box-sizing: content-box !important;
     -webkit-box-sizing: content-box !important
 }
@@ -2679,6 +2680,7 @@ body .wpb_gallery_slides ul li {
 }
 
 .ult-animation * {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden
 }
 
