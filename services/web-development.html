@@ -77,8 +77,8 @@
             style="background-image: -webkit-linear-gradient(left, #015dc7, #a200ff); color:white; ">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="site-branding" id="site-branding">
-                    <a href="/" class="custom-logo-link" rel="home" itemprop="url" aria-label="Home page"><img width="150" height="87"
-                            src="../images/logo.png" class="custom-logo" alt="Phlashweb"></a>
+                    <a href="/" class="custom-logo-link" rel="home" itemprop="url" aria-label="Home page"><img
+                            width="150" height="87" src="../images/logo.png" class="custom-logo" alt="Phlashweb"></a>
                 </div>
                 <nav id="site-navigation" class="main-navigation nav-menu" aria-label="main naviagtion">
                     <div class="menu-top-menus-container">
@@ -333,7 +333,8 @@
                                                             style="display: none;"></iframe>
                                                         <form action="/api/message" method="post" target="dummyframe"
                                                             class="wpcf7-form resetting" novalidate="novalidate"
-                                                            data-status="resetting">
+                                                            novalidate="novalidate" data-status="resetting"
+                                                            onsubmit="alert('Your message was sent successfully!');this.reset()">
                                                             <div style="display: none;">
                                                                 <input type="hidden" name="_wpcf7" value="95">
                                                                 <input type="hidden" name="_wpcf7_version"
@@ -408,25 +409,25 @@
                                                             <div class="row">
                                                                 <div class="col-lg-12">
                                                                     <span
-                                                                        class="wpcf7-form-control-wrap service-selection"><label for="service-selection">Service</label><select
-                                                                            name="service-selection"
+                                                                        class="wpcf7-form-control-wrap service-selection">
+                                                                        <label for="service-selection">Service</label>
+                                                                        <select name="service-selection"
                                                                             id="service-selection"
                                                                             class="wpcf7-form-control wpcf7-select"
                                                                             aria-invalid="false">
                                                                             <option value="Service *">Service *</option>
                                                                             <option value="Video content services">Video
                                                                                 content services</option>
-                                                                            <option value="Marketing Services">Marketing
-                                                                                Services</option>
-                                                                            <option value="Copywriting">Copywriting
-                                                                            </option>
                                                                             <option value="Bespoke Web Development">
                                                                                 Bespoke Web Development</option>
                                                                             <option value="App Development">App
                                                                                 Development</option>
                                                                             <option value="IT Support Services">IT
                                                                                 Support Services</option>
-                                                                        </select></span>
+                                                                            <option value="Cyber Security Services">
+                                                                                Cyber Security Services</option>
+                                                                        </select>
+                                                                    </span>
                                                                 </div>
                                                             </div>
 

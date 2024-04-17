@@ -372,7 +372,8 @@
                                                             style="display: none;"></iframe>
                                                         <form action="/api/message" method="post" target="dummyframe"
                                                             class="wpcf7-form resetting" novalidate="novalidate"
-                                                            data-status="resetting">
+                                                            novalidate="novalidate" data-status="resetting"
+                                                            onsubmit="alert('Your message was sent successfully!');this.reset()">
                                                             <div style="display: none;">
                                                                 <input type="hidden" name="_wpcf7" value="95">
                                                                 <input type="hidden" name="_wpcf7_version"
@@ -447,25 +448,25 @@
                                                             <div class="row">
                                                                 <div class="col-lg-12">
                                                                     <span
-                                                                        class="wpcf7-form-control-wrap service-selection"><label for="service-selection">Service</label><select
-                                                                            name="service-selection"
+                                                                        class="wpcf7-form-control-wrap service-selection">
+                                                                        <label for="service-selection">Service</label>
+                                                                        <select name="service-selection"
                                                                             id="service-selection"
                                                                             class="wpcf7-form-control wpcf7-select"
                                                                             aria-invalid="false">
                                                                             <option value="Service *">Service *</option>
                                                                             <option value="Video content services">Video
                                                                                 content services</option>
-                                                                            <option value="Marketing Services">Marketing
-                                                                                Services</option>
-                                                                            <option value="Copywriting">Copywriting
-                                                                            </option>
                                                                             <option value="Bespoke Web Development">
                                                                                 Bespoke Web Development</option>
                                                                             <option value="App Development">App
                                                                                 Development</option>
                                                                             <option value="IT Support Services">IT
                                                                                 Support Services</option>
-                                                                        </select></span>
+                                                                            <option value="Cyber Security Services">
+                                                                                Cyber Security Services</option>
+                                                                        </select>
+                                                                    </span>
                                                                 </div>
                                                             </div>
 
