@@ -1,6 +1,6 @@
 {
-    "short_name": "Phlashweb",
-    "name": "Phlashweb",
+    "short_name": "IT Solutions",
+    "name": "IT Solutions",
     "icons": [
       {
         "src": "/images/logo.png",
@@ -35,7 +35,7 @@
         "icons": [{ "src": "/images/logo-square.webp", "sizes": "150x150" }]
       }
     ],
-    "description": "Phlashweb service information",
+    "description": "IT Solutions service information",
     "screenshots": [
       {
         "src": "/images/screenshots/screenshot.png",
