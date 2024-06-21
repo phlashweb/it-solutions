@@ -373,7 +373,7 @@
                                                         <form action="/api/message" method="post" target="dummyframe"
                                                             class="wpcf7-form resetting" novalidate="novalidate"
                                                             novalidate="novalidate" data-status="resetting"
-                                                            onsubmit="alert('Your message was sent successfully!');this.reset()">
+                                                            onsubmit="this.submit();setTimeout(()=>{alert('Your message was sent successfully!');this.reset();}, 1000)">
                                                             <div style="display: none;">
                                                                 <input type="hidden" name="_wpcf7" value="95">
                                                                 <input type="hidden" name="_wpcf7_version"
