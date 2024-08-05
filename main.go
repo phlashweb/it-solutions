@@ -123,8 +123,8 @@ func main() {
 		}
 	})
 
-	// Development
-	http.ListenAndServe(":8000", nil)
-	//Production
-	// http.ListenAndServeTLS(":443", "server.crt", "server.key", nil)
+	port, exists := os.LookupEnv("PORT")
+	if exists {
+		http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
+	}
 }
