@@ -19,6 +19,7 @@ type FormData struct {
 	Message          string `json:"message"`
 	ServiceSelection string `json:"service_selection"`
 	PrivacyPolicy    string `json:"privacy_policy"`
+	IP               string `json:"ip"`
 }
 
 type IPMessages struct {
@@ -60,6 +61,7 @@ func main() {
 			Message:          r.FormValue("message"),
 			ServiceSelection: r.FormValue("service-selection"),
 			PrivacyPolicy:    r.FormValue("privacy-policy"),
+			IP:               r.RemoteAddr,
 		}
 
 		// Convert struct to JSON
