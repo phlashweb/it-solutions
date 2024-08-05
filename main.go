@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"slices"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
@@ -37,16 +38,31 @@ func main() {
 
 	// Define handler for POST request
 	http.HandleFunc("/api/message", func(w http.ResponseWriter, r *http.Request) {
+		ip := ""
+
+		ip = r.RemoteAddr
+
+		forwarded := r.Header.Get("X-Forwarded-For")
+		if forwarded != "" {
+			ips := strings.Split(forwarded, ",")
+			ip = strings.TrimSpace(ips[0])
+		}
+
+		realIP := r.Header.Get("X-Real-IP")
+		if realIP != "" {
+			ip = realIP
+		}
+
 		numberOfTimesIPHasBeenSeen := 0
 		for i := 0; i < len(ipData); i++ {
-			if ipData[i].IP == r.RemoteAddr {
+			if ipData[i].IP == ip {
 				numberOfTimesIPHasBeenSeen = ipData[i].MessageCount
 				ipData = slices.Delete(ipData, i, i+1)
-				fmt.Println("IP: ", r.RemoteAddr, " Name: ", r.FormValue("your-name"))
+				fmt.Println("IP: ", ip, " Name: ", r.FormValue("your-name"))
 			}
 		}
 
-		ipData = append(ipData, IPMessages{IP: r.RemoteAddr, MessageCount: numberOfTimesIPHasBeenSeen + 1})
+		ipData = append(ipData, IPMessages{IP: ip, MessageCount: numberOfTimesIPHasBeenSeen + 1})
 
 		if r.Method != "POST" {
 			http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
@@ -61,7 +77,7 @@ func main() {
 			Message:          r.FormValue("message"),
 			ServiceSelection: r.FormValue("service-selection"),
 			PrivacyPolicy:    r.FormValue("privacy-policy"),
-			IP:               r.RemoteAddr,
+			IP:               ip,
 		}
 
 		// Convert struct to JSON
@@ -127,6 +143,7 @@ func main() {
 
 	port, exists := os.LookupEnv("PORT")
 	if exists {
-		http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
+		err := http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
+		fmt.Println(err)
 	}
 }
